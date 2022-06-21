@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(67, 216, 67, 0.562);
+  
+  }  
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(120, 221, 25, 0.959);
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font: bold 2.5rem serif;
+    border-bottom: solid 15px black;
+    margin-bottom: 20px;
+}
+
+ .ipt {
+   width: 173px;
+   height: 100px;
+   justify-content: space-between;
+   text-align: center!important;
+  
+}
+
+.ipt input {
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px;
+    outline: 0;
+    text-align: center!important;
+    font: bold 1.0rem serif;
+    border-bottom: solid 10px black;
+    
+}
+
+ label {
+    font: bold 1.5rem serif;
+ }
+ 
+.alerts {
+    display: contents;
+    color: red!important;
+}
+
+
+button {
+    width: 235px;
+    height: 40px;
+    font: bold 1.5rem serif;
+    background: #000;
+    color: rgba(120, 221, 25, 0.959);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    font: italic 1.7rem serif;
+    box-shadow: 0px 0px 10px black;
+    background: #000;
+    color: rgba(120, 221, 25, 0.959);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+@media (max-width:350px){
+    .container{
+        width: 300px;
+    }
+
+}
+
+.ng-invalid.ng-touched:not(form){
+    border:  1px solid red;
+}
+

@@ -1,0 +1,30 @@
+
+<main>
+    <form #f="ngForm">
+        <div class="form-group">
+            <div class="container">
+                <div class="title">IMC</div>
+                <div class="campo">
+                    <label>Nome:</label>
+                    <input [(ngModel)]="nome" type="text" id="nome" name="nome" placeholder="Nome"/>
+                </div>
+                <div class="campo">
+                    <label>Peso:</label>
+                    <input [(ngModel)]="peso" type="text" id="peso" name="peso" placeholder="Peso" required
+                        #number="ngModel"/>
+                    <div *ngIf="!number.valid && number.touched" class="alerts">Obrigatório!</div>
+                </div>
+                <div class="campo">
+                    <label>Altura:</label>
+                    <input [(ngModel)]="altura" type="text" id="altura" name="altura" placeholder="Altura" required
+                        #number="ngModel"/>
+                    <div *ngIf="!number.valid && number.touched" class="alerts">Obrigatório!</div>
+                </div>
+                <button (click)="calcularImc()" class="" type="button" value="" [disabled]="!f.valid">Calcular</button>
+                <div class="result" id="resuldado">
+                    {{resultado}}
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
