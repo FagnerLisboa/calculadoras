@@ -5,7 +5,21 @@ main{
     justify-content: center;
     align-items: center;
     background-color: rgba(242, 72, 248, 0.021);
-  
+  }
+
+  input[type="date"]{
+    background-color: #f7d4f4;
+    padding: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 219px;
+    height: 40px;
+    font-family: "Reboto Mono" monospace;
+    color: rgb(201, 21, 207);
+    font-size: 28px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
   }
   
   .container{
@@ -41,10 +55,12 @@ main{
   }
 
   select {
-    width: 100%;
-    height: 45px;
+    width: 50%;
+    height: 35px;
+    color: rgb(201, 21, 207);
+    font-size: 20px;
   }
-  
+
   .campo {
     display: flex;
     height: 60px;
